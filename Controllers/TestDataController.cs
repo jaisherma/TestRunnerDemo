@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TestRunnerDemo.Controllers
@@ -10,6 +11,7 @@ namespace TestRunnerDemo.Controllers
         {
         }
 
+        [Authorize]
         [HttpGet]
         public ActionResult<List<TestData>> Get()
         {
