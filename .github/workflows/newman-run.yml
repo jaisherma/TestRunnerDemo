@@ -25,7 +25,7 @@ jobs:
         run: dotnet build
 
       - name: Run project
-        run: dotnet run --project <path-to-your-project.csproj>
+        run: dotnet run --project TestRunnerDemo.csproj
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
