@@ -22,11 +22,6 @@ namespace TestRunnerDemo.Controllers
                     Id = 4,
                     Name = "Test 1"
                 },
-                new TestData
-                {
-                    Id = 5,
-                    Name = "Test 2"
-                },
             };
 
             return this.Ok(data);
