@@ -25,7 +25,10 @@ jobs:
         run: dotnet build
 
       - name: Run project
-        run: dotnet run --project TestRunnerDemo.csproj
+        run: dotnet run --project TestRunnerDemo.csproj & # the '&' allows it to run in background
+
+      - name: Wait for API to start
+        run: sleep 10  
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
